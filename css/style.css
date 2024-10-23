@@ -1,0 +1,185 @@
+/* Reset some default styles */
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+}
+
+body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      color: #333;
+      line-height: 1.6;
+}
+
+/* Header and navigation */
+header {
+      background-color: red;
+      color: white;
+      padding: 10px 0;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 90%;
+      margin: 0 auto;
+}
+
+.logo {
+      font-size: 24px;
+      font-weight: bold;
+}
+
+.nav-links {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+}
+
+.nav-links li {
+      position: relative;
+}
+
+.nav-links a {
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+      padding: 10px;
+      transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+      color: #f5f5f5;
+}
+
+/* Dropdown Menu */
+.dropdown-content {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: white;
+      color: black;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+      z-index: 1;
+}
+
+.dropdown-content li {
+      padding: 10px;
+      width: 150px;
+}
+
+.dropdown-content a {
+      color: black;
+}
+
+.dropdown:hover .dropdown-content {
+      display: block;
+}
+
+/* Main Content */
+main {
+      padding: 20px;
+      max-width: 1200px;
+      margin: 20px auto;
+      background-color: white;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1,
+h2,
+h3 {
+      color: red;
+      text-align: center;
+      margin-bottom: 20px;
+}
+
+/* Form Styling */
+form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      max-width: 600px;
+      margin: 0 auto;
+}
+
+form label {
+      font-weight: bold;
+}
+
+form input,
+form select,
+form textarea {
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+}
+
+form button {
+      background-color: red;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+}
+
+form button:hover {
+      background-color: #d00000;
+}
+
+/* Footer */
+footer {
+      background-color: red;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+      box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+      margin: 0;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+      nav {
+            flex-direction: column;
+      }
+
+      .nav-links {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 10px;
+      }
+
+      .nav-links li {
+            margin: 5px 0;
+      }
+
+      main {
+            width: 95%;
+      }
+
+      form {
+            width: 90%;
+      }
+}
+
+@media (max-width: 480px) {
+      .logo {
+            font-size: 20px;
+      }
+
+      form {
+            width: 100%;
+      }
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Sell Laptop - Gadget Sell</title>
+      <link rel="stylesheet" href="css/sell.css">
+</head>
+
+<body>
+      <header>
+            <nav>
+                  <div class="logo">Gadget Sell</div>
+                  <ul class="nav-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li class="dropdown">
+                              <a href="#">Sell Gadgets</a>
+                              <ul class="dropdown-content">
+                                    <li><a href="sell-mobile.html">Sell Mobile</a></li>
+                                    <li><a href="sell-laptop.html">Sell Laptop</a></li>
+                                    <li><a href="sell-tablet.html">Sell Tablet</a></li>
+                                    <li><a href="sell-other-devices.html">Sell Other Devices</a></li>
+                              </ul>
+                        </li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                  </ul>
+            </nav>
+      </header>
+
+      <main>
+            <h1>Sell Your Laptop</h1>
+            <form id="sellLaptopForm">
+                  <label for="brand">Select Brand:</label>
+                  <select id="brand" name="brand" required>
+                        <option value="apple">Apple</option>
+                        <option value="dell">Dell</option>
+                        <option value="hp">HP</option>
+                        <option value="lenovo">Lenovo</option>
+                  </select>
+
+                  <label for="model">Model Name:</label>
+                  <input type="text" id="model" name="model" required>
+
+                  <label for="ram">RAM:</label>
+                  <input type="text" id="ram" name="ram" required>
+
+                  <label for="storage">Storage:</label>
+                  <input type="text" id="storage" name="storage" required>
+
+                  <label for="color">Color:</label>
+                  <input type="text" id="color" name="color" required>
+
+                  <label for="deviceAge">Device Age:</label>
+                  <input type="radio" id="new" name="deviceAge" value="new">
+                  <label for="new">New</label>
+                  <input type="radio" id="used" name="deviceAge" value="used">
+                  <label for="used">Used</label>
+
+                  <label for="accessories">Accessories:</label>
+                  <input type="checkbox" id="charger" name="accessories" value="charger">
+                  <label for="charger">Charger</label>
+                  <input type="checkbox" id="mouse" name="accessories" value="mouse">
+                  <label for="mouse">Mouse</label>
+
+                  <label for="deviceCondition">Device Condition:</label>
+                  <input type="radio" id="good" name="deviceCondition" value="good">
+                  <label for="good">Good</label>
+                  <input type="radio" id="poor" name="deviceCondition" value="poor">
+                  <label for="poor">Poor</label>
+
+                  <h3>User Details</h3>
+                  <label for="name">Name:</label>
+                  <input type="text" id="name" name="name" required>
+
+                  <label for="email">Email:</label>
+                  <input type="email" id="email" name="email" required>
+
+                  <label for="mobile">Mobile:</label>
+                  <input type="tel" id="mobile" name="mobile" required>
+
+                  <label for="address">Address:</label>
+                  <textarea id="address" name="address" required></textarea>
+
+                  <label for="city">City:</label>
+                  <input type="text" id="city" name="city" required>
+
+                  <label for="pincode">Pin Code:</label>
+                  <input type="text" id="pincode" name="pincode" required>
+
+                  <label for="pickupDate">Pick Up Date:</label>
+                  <input type="date" id="pickupDate" name="pickupDate" required>
+
+                  <button type="submit" id="submitBtn">Get Quote</button>
+            </form>
+      </main>
+
+      <footer>
+            <p>© 2024 Gadget Sell. All rights reserved.</p>
+      </footer>
+
+      <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+      <script src="js/script.js"></script>
+</body>
+
+</html>
