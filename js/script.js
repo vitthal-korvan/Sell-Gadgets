@@ -31,6 +31,11 @@ function showSlides(n) {
   dots[slideIndex - 1].className += " active";
 }
 
+setInterval(function () {
+  plusSlides(1);
+}, 3000);
+
+
 // Initialize EmailJS
 (function () {
   emailjs.init("YOUR_EMAILJS_USER_ID");
