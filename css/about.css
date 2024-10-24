@@ -1,58 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 /* Basic styling for the About Us page */
 body {
-      font-family: Arial, sans-serif;
+      font-family: "Poppins",
+            sans-serif;
       margin: 0;
       padding: 0;
       background-color: #f5f5f5;
       color: #333;
-}
+} 
 
-header {
-      background-color: red;
-      padding: 10px;
-      color: white;
-}
 
-nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-}
-
-.nav-links {
-      list-style: none;
-      display: flex;
-}
-
-.nav-links li {
-      margin-right: 15px;
-}
-
-.nav-links a {
-      color: white;
-      text-decoration: none;
-}
-
-main {
+/* Container */
+.container {
+      max-width: 1200px;
+      margin: 0 auto;
       padding: 20px;
-      margin: 20px auto;
-      width: 80%;
-      background-color: white;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+/* About Section */
 .about-section {
+      padding: 50px 20px;
+      background-color: white;
       text-align: center;
-      margin: 20px 0;
 }
 
 .about-section h1 {
+      font-size: 36px;
       color: red;
 }
 
-footer {
-      background-color: red;
+.about-section p {
+      font-size: 18px;
+      margin-top: 20px;
+      line-height: 1.6;
+      color: #666;
+}
+/* --------------  Our Assurance and Responsibility   ------------------------ */
+/* Our Assurance and Responsibility Section */
+.assurance-responsibility {
+      padding: 50px 20px;
+      background-color: #f9f9f9;
       text-align: center;
-      padding: 10px;
-      color: white;
+}
+
+.assurance-responsibility h2 {
+      font-size: 32px;
+      color: red;
+      margin-bottom: 30px;
+}
+
+.assurance-responsibility p {
+      font-size: 18px;
+      color: #666;
+      margin-bottom: 40px;
+      line-height: 1.6;
+}
+
+.assurance-highlights {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+}
+
+/* Individual Highlight Box */
+.highlight-box {
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      flex: 1;
+      max-width: 30%;
+      transition: transform 0.3s;
+}
+
+.highlight-box > img{
+      height: 200px;
+      width: 280px;
+}
+
+
+.highlight-box:hover {
+      transform: translateY(-10px);
+}
+
+.highlight-icon {
+      width: 60px;
+      margin-bottom: 20px;
+}
+
+.highlight-box h3 {
+      font-size: 20px;
+      color: #333;
+      margin-bottom: 15px;
+}
+
+.highlight-box p {
+      font-size: 16px;
+      color: #666;
+      line-height: 1.4;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+      .assurance-highlights {
+            flex-direction: column;
+            gap: 30px;
+      }
+
+      .highlight-box {
+            max-width: 100%;
+            margin-bottom: 20px;
+      }
+}
+
+@media (max-width: 768px) {
+      .assurance-responsibility h2 {
+            font-size: 28px;
+      }
+
+      .highlight-box h3 {
+            font-size: 18px;
+      }
+
+      .highlight-box p {
+            font-size: 14px;
+      }
+}
+
+@media (max-width: 480px) {
+      .assurance-responsibility {
+            padding: 30px 10px;
+      }
+
+      .assurance-responsibility h2 {
+            font-size: 24px;
+      }
+
+      .assurance-responsibility p {
+            font-size: 16px;
+      }
+
+      .highlight-box h3 {
+            font-size: 16px;
+      }
+
+      .highlight-box p {
+            font-size: 12px;
+      }
+}
+
+/* -------------- Why Choose Us Section ---------------- */
+.why-choose-us {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 50px 20px;
+      background-color: #f0f0f0;
+}
+
+.why-choose-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+}
+
+/* Image on the Left */
+.why-choose-image {
+      flex: 1;
+      max-width: 45%;
+}
+
+.why-choose-image img {
+      width: 100%;
+      border-radius: 10px;
+}
+
+/* Text on the Right */
+.why-choose-text {
+      flex: 1;
+      max-width: 45%;
+      margin-left: 30px;
+}
+
+.why-choose-text h2 {
+      font-size: 28px;
+      color: red;
+      margin-bottom: 20px;
+}
+
+.why-choose-text p {
+      font-size: 18px;
+      color: #666;
+      margin-bottom: 20px;
+}
+
+.why-choose-text ul {
+      list-style: none;
+      padding-left: 0;
+}
+
+.why-choose-text ul li {
+      font-size: 16px;
+      margin-bottom: 10px;
+}
+
+.why-choose-text ul li strong {
+      color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+      .why-choose-content {
+            flex-direction: column;
+      }
+
+      .why-choose-image,
+      .why-choose-text {
+            max-width: 100%;
+            margin-left: 0;
+      }
+
+      .why-choose-text {
+            margin-top: 30px;
+            text-align: center;
+      }
+}
+
+@media (max-width: 768px) {
+      .about-section h1 {
+            font-size: 30px;
+      }
+
+      .why-choose-text h2 {
+            font-size: 24px;
+      }
+
+      .why-choose-text p {
+            font-size: 16px;
+      }
+
+      .why-choose-text ul li {
+            font-size: 14px;
+      }
+}
+
+@media (max-width: 480px) {
+      .about-section {
+            padding: 30px 10px;
+      }
+
+      .about-section h1 {
+            font-size: 26px;
+      }
+
+      .about-section p {
+            font-size: 16px;
+      }
+
+      .why-choose-us {
+            padding: 30px 10px;
+      }
+
+      .why-choose-text h2 {
+            font-size: 20px;
+      }
+
+      .why-choose-text p {
+            font-size: 14px;
+      }
+
+      .why-choose-text ul li {
+            font-size: 12px;
+      }
 }

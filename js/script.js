@@ -1,3 +1,5 @@
+//----------------- Slideshow -------------------
+
 let slideIndex = 1;
 showSlides(slideIndex);
 
@@ -35,8 +37,33 @@ setInterval(function () {
   plusSlides(1);
 }, 3000);
 
+// --------------------- FAQ Toggle ---------------------
 
-// Initialize EmailJS
+// FAQ toggle function
+document.querySelectorAll('.faq-item').forEach(item => {
+    item.addEventListener('click', function() {
+        // Toggle the 'active' class
+        this.classList.toggle('active');
+
+        // Get the associated answer
+        const answer = this.querySelector('.faq-answer');
+        const toggleIcon = this.querySelector('.faq-toggle');
+
+        // Toggle the display of the answer
+        if (answer.style.display === 'block') {
+            answer.style.display = 'none';
+            toggleIcon.textContent = '+';
+        } else {
+            answer.style.display = 'block';
+            toggleIcon.textContent = '-';
+        }
+    });
+});
+
+
+
+
+// -------------- Initialize EmailJS ---------------------
 (function () {
   emailjs.init("YOUR_EMAILJS_USER_ID");
 })();
