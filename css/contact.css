@@ -11,7 +11,7 @@ body {
 }
 
 header {
-      background-color: red;
+      background-color: #6663E9;
       padding: 10px;
       color: white;
 }
@@ -50,7 +50,7 @@ main {
 }
 
 .contact-section h1 {
-      color: red;
+      color: #6663E9;
 }
 
 form {
@@ -69,7 +69,7 @@ form textarea {
 }
 
 form button {
-      background-color: red;
+      background-color: #6663E9;
       color: white;
       padding: 10px;
       border: none;
@@ -78,7 +78,7 @@ form button {
 }
 
 footer {
-      background-color: red;
+      background-color: #6663E9;
       text-align: center;
       padding: 10px;
       color: white;

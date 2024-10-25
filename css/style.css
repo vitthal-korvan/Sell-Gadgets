@@ -16,7 +16,7 @@ body {
 
 /* Header and navigation */
 header {
-      background-color: red;
+      background-color: #6663E9;
       color: white;
       padding: 25px 0;
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -40,6 +40,10 @@ nav {
       color: #fff;
 }
 
+.logo>a>img{
+      max-width: 100px;
+}
+
 .nav-links {
       list-style: none;
       display: flex;
@@ -56,7 +60,7 @@ nav {
       font-size: 1.2rem;
       padding: 10px;
       transition: color 0.3s ease;
-      font-weight: 700;
+      font-weight: 500;
 }
 
 .nav-links a:hover {
@@ -101,7 +105,7 @@ main {
 h1,
 h2,
 h3 {
-      color: red;
+      color: #6663E9;
       text-align: center;
       margin-bottom: 20px;
 }
@@ -132,7 +136,7 @@ form textarea {
 }
 
 form button {
-      background-color: red;
+      background-color: #6663E9;
       color: white;
       padding: 10px;
       border: none;
@@ -142,12 +146,12 @@ form button {
 }
 
 form button:hover {
-      background-color: #d00000;
+      background-color: #6663E9;
 }
 
 /* Footer */
 footer {
-      background-color: red;
+      background-color: #6663E9;
       color: white;
       padding: 10px 0;
       position: relative;
