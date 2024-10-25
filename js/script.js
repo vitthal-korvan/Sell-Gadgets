@@ -40,28 +40,25 @@ setInterval(function () {
 // --------------------- FAQ Toggle ---------------------
 
 // FAQ toggle function
-document.querySelectorAll('.faq-item').forEach(item => {
-    item.addEventListener('click', function() {
-        // Toggle the 'active' class
-        this.classList.toggle('active');
+document.querySelectorAll(".faq-item").forEach((item) => {
+  item.addEventListener("click", function () {
+    // Toggle the 'active' class
+    this.classList.toggle("active");
 
-        // Get the associated answer
-        const answer = this.querySelector('.faq-answer');
-        const toggleIcon = this.querySelector('.faq-toggle');
+    // Get the associated answer
+    const answer = this.querySelector(".faq-answer");
+    const toggleIcon = this.querySelector(".faq-toggle");
 
-        // Toggle the display of the answer
-        if (answer.style.display === 'block') {
-            answer.style.display = 'none';
-            toggleIcon.textContent = '+';
-        } else {
-            answer.style.display = 'block';
-            toggleIcon.textContent = '-';
-        }
-    });
+    // Toggle the display of the answer
+    if (answer.style.display === "block") {
+      answer.style.display = "none";
+      toggleIcon.textContent = "+";
+    } else {
+      answer.style.display = "block";
+      toggleIcon.textContent = "-";
+    }
+  });
 });
-
-
-
 
 // -------------- Initialize EmailJS ---------------------
 (function () {
@@ -91,21 +88,25 @@ document
   });
 
 // Handle Contact Us form submission
-document
-  .getElementById("contactForm")
-  ?.addEventListener("submit", function (event) {
-    event.preventDefault();
-    sendForm(this);
-  });
+// Initialize EmailJS
+(function() {
+    emailjs.init("pTDs-lKL96Apcs-So"); // Replace with your EmailJS user ID
+})();
 
-// Function to send form via EmailJS
-function sendForm(form) {
-  emailjs.sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", form).then(
-    function () {
-      alert("Thanks for sharing details. We will get back to you soon.");
-    },
-    function (error) {
-      console.log("FAILED...", error);
-    }
-  );
-}
+document.getElementById("contact-form").addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    emailjs
+      .sendForm("service_htxxlys", "template_cazaa87", this) // Replace with your EmailJS service ID and template ID
+      .then(
+        function () {
+          alert(
+            "Thanks for reaching out! Your message has been sent successfully."
+          );
+        },
+        function (error) {
+          alert("Oops! Something went wrong, please try again.");
+          console.log("Failed to send email:", error);
+        }
+      );
+});

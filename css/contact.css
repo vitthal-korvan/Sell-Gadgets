@@ -1,85 +1,108 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-/* Basic styling for the Contact Us page */
-body {
-      font-family: "Poppins",
-            sans-serif;
+/* General Styling */
+* {
       margin: 0;
       padding: 0;
-      background-color: #f5f5f5;
-      color: #333;
+      box-sizing: border-box;
 }
 
-header {
-      background-color: #6663E9;
-      padding: 10px;
-      color: white;
+body {
+      font-family: "Poppins";
 }
 
-nav {
+.contact-us {
+      padding: 40px;
       display: flex;
-      justify-content: space-between;
-      align-items: center;
+      justify-content: center;
 }
 
-.nav-links {
-      list-style: none;
+.container {
       display: flex;
+      gap: 40px;
+      max-width: 1000px;
+      width: 100%;
 }
 
-.nav-links li {
-      margin-right: 15px;
+/* Left Side: Get in Touch Form */
+.get-in-touch {
+      flex: 1;
 }
 
-.nav-links a {
-      color: white;
-      text-decoration: none;
-}
-
-main {
-      padding: 20px;
-      margin: 20px auto;
-      width: 80%;
-      background-color: white;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.contact-section {
-      text-align: center;
-      margin: 20px 0;
-}
-
-.contact-section h1 {
+.get-in-touch h2 {
+      /* margin-bottom: 20px; */
       color: #6663E9;
 }
 
-form {
+.get-in-touch form {
       display: flex;
       flex-direction: column;
-      gap: 10px;
-      width: 50%;
-      margin: 0 auto;
 }
 
-form input,
-form textarea {
-      padding: 10px;
+.get-in-touch label {
+      /* margin: 10px 0 5px; */
+      color: #555;
+}
+
+.get-in-touch label .required {
+      color: red;
+      font-weight: bold;
+}
+
+.get-in-touch input,
+.get-in-touch textarea {
+      /* padding: 10px; */
+      font-size: 16px;
+      /* margin-bottom: 15px; */
       border: 1px solid #ccc;
-      border-radius: 5px;
+      border-radius: 4px;
 }
 
-form button {
-      background-color: #6663E9;
+.get-in-touch button {
+      padding: 10px 20px;
+      font-size: 16px;
       color: white;
-      padding: 10px;
+      background-color: #6663E9;
       border: none;
-      border-radius: 5px;
+      border-radius: 4px;
       cursor: pointer;
+      transition: background 0.3s;
 }
 
-footer {
-      background-color: #6663E9;
-      text-align: center;
-      padding: 10px;
-      color: white;
+.get-in-touch button:hover {
+      background-color: #9896fa;
+}
+
+/* Right Side: Contact Information */
+.contact-info {
+      flex: 1;
+      color: #333;
+}
+
+.contact-info h2 {
+      margin-bottom: 20px;
+}
+
+.contact-info p {
+      margin: 10px 0;
+      font-size: 16px;
+      display: flex;
+      align-items: center;
+}
+
+.contact-info i {
+      margin-right: 110px;
+      font-size: 18px;
+      color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+      .container {
+            flex-direction: column;
+            align-items: center;
+      }
+
+      .contact-info,
+      .get-in-touch {
+            width: 100%;
+      }
 }
