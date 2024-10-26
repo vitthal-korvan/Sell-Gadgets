@@ -16,6 +16,7 @@ body {
 
 /* --------------- Menu Bar -------------------- */
 /* Header and navigation */
+/* General Styles for Header and Nav (retain existing desktop styles) */
 header {
       background-color: #6663E9;
       color: white;
@@ -31,17 +32,7 @@ nav {
       margin: 0 auto;
 }
 
-.logo {
-      font-size: 24px;
-      font-weight: bold;
-}
-
-.logo>a {
-      text-decoration: none;
-      color: #fff;
-}
-
-.logo>a>img {
+.logo img {
       max-width: 200px;
       padding-top: 0.6rem;
 }
@@ -66,7 +57,6 @@ nav {
 }
 
 .nav-links a:hover {
-      list-style: none;
       color: #4e4d4d;
 }
 
@@ -82,8 +72,11 @@ nav {
       z-index: 1;
 }
 
+.dropdown:hover .dropdown-content {
+      display: block;
+}
+
 .dropdown-content li {
-      list-style: none;
       padding: 10px;
       width: 170px;
 }
@@ -92,8 +85,72 @@ nav {
       color: black;
 }
 
-.dropdown:hover .dropdown-content {
-      display: block;
+/* Hamburger Menu for Mobile */
+.hamburger {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+      gap: 4px;
+}
+
+.hamburger span {
+      width: 25px;
+      height: 3px;
+      background-color: white;
+      border-radius: 2px;
+}
+
+/* Mobile and Tablet Styles */
+@media (max-width: 768px) {
+
+      /* Hamburger menu visible */
+      .hamburger {
+            display: flex;
+      }
+
+      /* Hide desktop nav links */
+      .nav-links {
+            display: none;
+            flex-direction: column;
+            background-color: #6663E9;
+            position: absolute;
+            top: 60px;
+            left: 0;
+            width: 100%;
+            padding: 20px;
+      }
+
+      .nav-links li {
+            margin: 10px 0;
+      }
+
+      /* Display nav links on hamburger click */
+      .nav-links.show {
+            display: flex;
+      }
+
+      /* Dropdown on mobile */
+      .dropdown-content {
+            position: relative;
+            top: 0;
+            background-color: #555;
+            box-shadow: none;
+      }
+
+      .dropdown:hover .dropdown-content {
+            display: none;
+      }
+
+      .dropdown-content a {
+            color: white;
+            padding: 10px;
+            display: block;
+      }
+
+      .dropdown i {
+            margin-left: 5px;
+            cursor: pointer;
+      }
 }
 
 /* ---------------- Main Content -------------------*/

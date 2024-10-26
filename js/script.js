@@ -1,3 +1,14 @@
+// ---------------- Hamburger Menu --------------
+// Add this to script.js or inside a <script> tag in your HTML
+const hamburger = document.querySelector(".hamburger");
+const navLinks = document.querySelector(".nav-links");
+
+hamburger.addEventListener("click", () => {
+    navLinks.classList.toggle("show");
+});
+
+
+
 //----------------- Slideshow -------------------
 
 let slideIndex = 1;
