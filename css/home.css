@@ -152,21 +152,106 @@ nav {
 }
 
 
-
-.intro {
-      font-size: 2.4rem;
+/* ----------- Intro ------------- */
+/* Intro Section Styling */
+.intro-section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 4rem 2rem;
       text-align: center;
-      padding: 50px;
-      background-color: white;
+      background: linear-gradient(to right, #6663E9, #a89ee4);
+      /* gradient background */
+      color: #fff;
+      height: 80vh;
+      background-size: cover;
+      background-position: center;
 }
 
-.intro-text {
-      color: #1e1d1d;
+.intro-content {
+      max-width: 700px;
 }
 
-.intro>p {
-      font-size: 2rem;
-      line-height: 0.3;
+.intro-section h1 {
+      color: #fff;
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      font-weight: 700;
+}
+
+.intro-section p {
+      font-size: 1.2rem;
+      line-height: 1.5;
+      margin-bottom: 2rem;
+      font-weight: 400;
+}
+
+.intro-btn {
+      display: inline-block;
+      padding: 0.8rem 2rem;
+      background-color: #fff;
+      color: #6663E9;
+      border-radius: 25px;
+      font-size: 1rem;
+      font-weight: 500;
+      transition: all 0.3s ease;
+      text-decoration: none;
+}
+
+.intro-btn:hover {
+      background-color: #ddd;
+      color: #4e4d4d;
+}
+
+/* Responsive Styling */
+@media (max-width: 1024px) {
+      .intro-section {
+            height: 60vh;
+            padding: 3rem 1.5rem;
+      }
+
+      .intro-section h1 {
+            font-size: 2.2rem;
+      }
+
+      .intro-section p {
+            font-size: 1rem;
+      }
+}
+
+@media (max-width: 768px) {
+      .intro-section h1 {
+            font-size: 1.8rem;
+      }
+
+      .intro-section p {
+            font-size: 0.9rem;
+      }
+
+      .intro-btn {
+            padding: 0.6rem 1.5rem;
+            font-size: 0.9rem;
+      }
+}
+
+@media (max-width: 480px) {
+      .intro-section {
+            padding: 2rem 1rem;
+            height: 50vh;
+      }
+
+      .intro-section h1 {
+            font-size: 1.5rem;
+      }
+
+      .intro-section p {
+            font-size: 0.8rem;
+      }
+
+      .intro-btn {
+            padding: 0.5rem 1rem;
+            font-size: 0.8rem;
+      }
 }
 
 
