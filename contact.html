@@ -17,25 +17,80 @@
 
 <body>
       <!-- Navigation Bar -->
+      <!-- <header>
+                  <nav>
+                        <div class="logo">
+                              <a href="index.html"><img src="./img/logo2.png" alt="Logo"></a>
+                        </div>
+      
+                        <div class="hamburger">
+                              <span></span>
+                              <span></span>
+                              <span></span>
+                        </div>
+                        <ul class="nav-links">
+                              <li><a href="index.html">Home</a></li>
+                              <li class="dropdown">
+                                    <a href="#">Sell Gadgets <i class="fa fa-caret-down"></i></a>
+                                    <ul class="dropdown-content">
+                                          <li><a href="sell-mobile.html">Sell Mobile</a></li>
+                                          <li><a href="sell-laptop.html">Sell Laptop</a></li>
+                                          <li><a href="sell-tablet.html">Sell Tablet</a></li>
+                                          <li><a href="sell-other-devices.html">Other Device</a></li>
+                                    </ul>
+                              </li>
+                              <li><a href="about.html">About Us</a></li>
+                              <li><a href="contact.html">Contact Us</a></li>
+                        </ul>
+                  </nav>
+            </header> -->
+      
       <header>
             <nav>
-                  <div class="logo"><a href="index.html"><img src="./img/logo2.png"></a></div>
+                  <!-- Logo on the left -->
+                  <div class="logo"><a href="index.html"><img src="./img/logo2.png" alt="Logo"></a></div>
+      
+                  <!-- Desktop Navigation Links -->
                   <ul class="nav-links">
                         <li><a href="index.html">Home</a></li>
                         <li class="dropdown">
-                              <a href="#">Sell Gadgets <i class="fa fa-caret-down"></i></a>
+                              <a href="./sell-mobile.html">Sell Gadgets <i class="fa fa-caret-down"></i></a>
                               <ul class="dropdown-content">
                                     <li><a href="sell-mobile.html">Sell Mobile</a></li>
                                     <li><a href="sell-laptop.html">Sell Laptop</a></li>
                                     <li><a href="sell-tablet.html">Sell Tablet</a></li>
-                                    <li><a href="sell-other-devices.html"> Other Device</a></li>
+                                    <li><a href="sell-other-devices.html">Other Devices</a></li>
                               </ul>
                         </li>
                         <li><a href="about.html">About Us</a></li>
                         <li><a href="contact.html">Contact Us</a></li>
                   </ul>
+      
+                  <!-- Hamburger Icon for Mobile -->
+                  <div class="hamburger" onclick="toggleMenu()">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                  </div>
             </nav>
       </header>
+      
+      <!-- Full-Screen Mobile Navigation Menu -->
+      <div class="mobile-nav" id="mobile-nav">
+            <div class="mobile-nav-header">
+                  <div class="logo"><a href="index.html"><img src="./img/logo2.png" alt="Logo"></a></div>
+                  <div class="close-btn" onclick="toggleMenu()">&#10005;</div>
+            </div>
+            <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="sell-mobile.html">Sell Mobile</a></li>
+                  <li><a href="sell-laptop.html">Sell Laptop</a></li>
+                  <li><a href="sell-tablet.html">Sell Tablet</a></li>
+                  <li><a href="sell-other-devices.html">Other Devices</a></li>
+                  <li><a href="about.html">About Us</a></li>
+                  <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+      </div>
 
 <section class="contact-us">
       <div class="container">
