@@ -1,11 +1,9 @@
 // ---------------- Hamburger Menu --------------
-// Add this to script.js or inside a <script> tag in your HTML
-const hamburger = document.querySelector(".hamburger");
-const navLinks = document.querySelector(".nav-links");
+function toggleMenu() {
+  const mobileNav = document.getElementById("mobile-nav");
+  mobileNav.classList.toggle("show");
+}
 
-hamburger.addEventListener("click", () => {
-    navLinks.classList.toggle("show");
-});
 
 
 

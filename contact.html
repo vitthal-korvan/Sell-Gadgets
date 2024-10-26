@@ -42,7 +42,9 @@
             <!-- Left Side: Get in Touch Form -->
             <div class="get-in-touch">
                   <h2>Get in Touch</h2>
-                  <form id="contact-form">
+                  <form id="contact-form" action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key" value="6874a93e-25d6-4419-9ae5-6c928c0ff98b">
+                        <input type="hidden" name="redirect" value="http://127.0.0.1:5500/index.html">
                         <label for="name">Name <span class="required">*</span></label>
                         <input type="text" id="name" name="name" required>
 
@@ -62,9 +64,15 @@
             <!-- Right Side: Contact Information -->
             <div class="contact-info">
                   <h2>Contact Information</h2>
-                  <p><i class="icon-location"></i>A 32 Mahim Mansion, <br/>MMC Crosss Road,<br/> Mahim West, <br/> Mumbai - 16.</p>
-                  <p><i class="icon-phone"></i> +91 98675 05049</p>
-                  <p><i class="icon-envelope"></i> admin@sellgadgets.online</p>
+                  <p><a href="https://www.instagram.com/sellgadgets.online/" target="_blank" class="icon-link">
+                        <i class="fa-regular fa-address-book"></i>
+                  </a>A 32 Mahim Mansion, <br/>MMC Crosss Road,<br/> Mahim West, <br/> Mumbai - 16.</p>
+                  <p><a href="https://www.instagram.com/sellgadgets.online/" target="_blank" class="icon-link">
+                        <i class="fa-solid fa-id-card"></i>
+                  </a> +91 98675 05049</p>
+                  <p><a href="https://www.instagram.com/sellgadgets.online/" target="_blank" class="icon-link">
+                        <i class="fa-solid fa-envelope"></i>
+                  </a> admin@sellgadgets.online</p>
             </div>
       </div>
 </section>
