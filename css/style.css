@@ -42,7 +42,8 @@ nav {
 }
 
 .logo>a>img {
-      max-width: 100px;
+      max-width: 200px;
+      padding-top: 0.6rem;
 }
 
 .nav-links {
@@ -82,6 +83,7 @@ nav {
 }
 
 .dropdown-content li {
+      list-style: none;
       padding: 10px;
       width: 170px;
 }

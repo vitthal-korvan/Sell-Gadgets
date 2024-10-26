@@ -7,32 +7,36 @@
       <title>Sell Mobile - Gadget Sell</title>
       <link rel="stylesheet" href="css/sell.css">
       <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-      <header>
-            <nav>
-                  <div class="logo">Gadget Sell</div>
-                  <ul class="nav-links">
-                        <li><a href="index.html">Home</a></li>
-                        <li class="dropdown">
-                              <a href="#">Sell Gadgets</a>
-                              <ul class="dropdown-content">
-                                    <li><a href="sell-mobile.html">Sell Mobile</a></li>
-                                    <li><a href="sell-laptop.html">Sell Laptop</a></li>
-                                    <li><a href="sell-tablet.html">Sell Tablet</a></li>
-                                    <li><a href="sell-other-devices.html">Sell Other Devices</a></li>
-                              </ul>
-                        </li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="contact.html">Contact Us</a></li>
-                  </ul>
-            </nav>
-      </header>
+<!-- Navigation Bar -->
+<header>
+      <nav>
+            <div class="logo"><a href="index.html"><img src="./img/logo2.png"></a></div>
+            <ul class="nav-links">
+                  <li><a href="index.html">Home</a></li>
+                  <li class="dropdown">
+                        <a href="#">Sell Gadgets <i class="fa fa-caret-down"></i></a>
+                        <ul class="dropdown-content">
+                              <li><a href="sell-mobile.html">Sell Mobile</a></li>
+                              <li><a href="sell-laptop.html">Sell Laptop</a></li>
+                              <li><a href="sell-tablet.html">Sell Tablet</a></li>
+                              <li><a href="sell-other-devices.html"> Other Device</a></li>
+                        </ul>
+                  </li>
+                  <li><a href="about.html">About Us</a></li>
+                  <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+      </nav>
+</header>
 
       <main>
             <h1>Sell Your Mobile</h1>
-            <form id="sellForm">
+            <form id="sellForm" action="https://api.web3forms.com/submit" method="POST">
+                  <input type="hidden" name="access_key" value="6874a93e-25d6-4419-9ae5-6c928c0ff98b">
+                  <input type="hidden" name="redirect" value="http://127.0.0.1:5500/index.html">
                   <label for="brand">Select Brand:</label>
                   <select id="brand" name="brand">
                         <option value="apple">Apple</option>
