@@ -1,9 +1,13 @@
 // ---------------- Hamburger Menu --------------
-function toggleMenu() {
-  const mobileNav = document.getElementById("mobile-nav");
-  mobileNav.classList.toggle("show");
-}
+// function toggleMenu() {
+//   const mobileNav = document.getElementById("mobile-nav");
+//   mobileNav.classList.toggle("show");
+// }
 
+
+ function toggleMenu() {
+   document.getElementById("mobileMenu").classList.toggle("open");
+ }
 
 
 
