@@ -58,69 +58,89 @@
 
       <main>
             <h1>Sell Other Devices</h1>
-            <form id="sellOtherDevicesForm">
-                  <label for="brand">Select Brand:</label>
-                  <select id="brand" name="brand" required>
-                        <option value="sony">Sony</option>
-                        <option value="bose">Bose</option>
-                        <option value="jbl">JBL</option>
-                        <option value="other">Other</option>
-                  </select>
+            <section class="form-section">
+                  <form id="gadgetForm" action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key" value="6874a93e-25d6-4419-9ae5-6c928c0ff98b">
+                        <input type="hidden" name="redirect" value="http://127.0.0.1:5500/success.html">
+                        <input type="hidden" name="from_name" value='SG - Other Devices'>
+                        <input type="hidden" name="subject" value="Sell Other Devices Form">
+                        <!-- User Information Fields -->
 
-                  <label for="model">Model Name:</label>
-                  <input type="text" id="model" name="model" required>
 
-                  <label for="ram">RAM (if applicable):</label>
-                  <input type="text" id="ram" name="ram">
+                        <!-- Gadget Information Fields -->
+                        <h2>Device Information</h2>
+                        <div class="form-group">
+                              <label for="device-type">Select Brand*</label>
+                              <select id="device-type" name="device-type" required>
+                                    <option value="tablet">Apple</option>
+                                    <option value="mobile">Sony</option>
+                                    <option value="laptop">LG</option>
+                                    <option value="other">Other </option>
+                              </select>
+                        </div>
 
-                  <label for="storage">Storage (if applicable):</label>
-                  <input type="text" id="storage" name="storage">
+                        <div class="form-group">
+                              <label for="brand">Model Name*</label>
+                              <input type="text" id="brand" name="brand" required>
+                        </div>
 
-                  <label for="color">Color:</label>
-                  <input type="text" id="color" name="color" required>
+                        <div class="form-group">
+                              <label>Condition*</label>
+                              <label><input type="radio" name="condition" value="excellent" required> Excellent: <span
+                                          style="font-weight: 400;">Device in Best Condition</span> </label>
+                              <label><input type="radio" name="condition" value="superb" required> Superb: <span
+                                          style="font-weight: 400;">1-2 Minor Issues</span> </label>
+                              <label><input type="radio" name="condition" value="very good" required> Very Good: <span
+                                          style="font-weight: 400;">Minimum Usage of Device</span> </label>
+                              <label><input type="radio" name="condition" value="good" required> Good: <span
+                                          style="font-weight: 400;">Heavy Usage of Device</span> </label>
+                        </div>
 
-                  <label for="deviceAge">Device Age:</label>
-                  <input type="radio" id="new" name="deviceAge" value="new">
-                  <label for="new">New</label>
-                  <input type="radio" id="used" name="deviceAge" value="used">
-                  <label for="used">Used</label>
+                        <div class="form-group">
+                              <label>Accessories Included</label>
+                              <label><input type="checkbox" name="charger" > Charger</label>
+                              <label><input type="checkbox" name="box" > Original Box</label>
+                              <label><input type="checkbox" name="earphones" > Earphones</label>
+                        </div>
+                        <h2>Personal Information</h2>
+                        <div class="form-group">
+                              <label for="name">Name*</label>
+                              <input type="text" id="name" name="name" required>
+                        </div>
 
-                  <label for="accessories">Accessories:</label>
-                  <input type="checkbox" id="cables" name="accessories" value="cables">
-                  <label for="cables">Cables</label>
-                  <input type="checkbox" id="remote" name="accessories" value="remote">
-                  <label for="remote">Remote</label>
+                        <div class="form-group">
+                              <label for="mobile">Mobile*</label>
+                              <input type="tel" id="mobile" name="mobile" required>
+                        </div>
 
-                  <label for="deviceCondition">Device Condition:</label>
-                  <input type="radio" id="good" name="deviceCondition" value="good">
-                  <label for="good">Good</label>
-                  <input type="radio" id="poor" name="deviceCondition" value="poor">
-                  <label for="poor">Poor</label>
+                        <div class="form-group">
+                              <label for="email">Email*</label>
+                              <input type="email" id="email" name="email" required>
+                        </div>
 
-                  <h3>User Details</h3>
-                  <label for="name">Name:</label>
-                  <input type="text" id="name" name="name" required>
+                        <div class="form-group">
+                              <label for="address">Address*</label>
+                              <input type="text" id="address" name="address" required>
+                        </div>
 
-                  <label for="email">Email:</label>
-                  <input type="email" id="email" name="email" required>
+                        <div class="form-group">
+                              <label for="city">City*</label>
+                              <input type="text" id="city" name="city" required>
+                        </div>
 
-                  <label for="mobile">Mobile:</label>
-                  <input type="tel" id="mobile" name="mobile" required>
+                        <div class="form-group">
+                              <label for="pin">Pin Code*</label>
+                              <input type="text" id="pin" name="pin" required>
+                        </div>
 
-                  <label for="address">Address:</label>
-                  <textarea id="address" name="address" required></textarea>
+                        <div class="form-group">
+                              <label for="pick-up-date">Pick-Up Date*</label>
+                              <input type="date" id="pick-up-date" name="pick-up-date" required>
+                        </div>
 
-                  <label for="city">City:</label>
-                  <input type="text" id="city" name="city" required>
-
-                  <label for="pincode">Pin Code:</label>
-                  <input type="text" id="pincode" name="pincode" required>
-
-                  <label for="pickupDate">Pick Up Date:</label>
-                  <input type="date" id="pickupDate" name="pickupDate" required>
-
-                  <button type="submit" id="submitBtn">Get Quote</button>
-            </form>
+                        <button type="submit" class="submit-btn">Submit</button>
+                  </form>
+            </section>
       </main>
 
       <footer class="footer">
