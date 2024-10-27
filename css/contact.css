@@ -29,7 +29,7 @@ body {
 
 .get-in-touch h2 {
       /* margin-bottom: 20px; */
-      color: #6663E9;
+      color: #000;
 }
 
 .get-in-touch form {
@@ -60,7 +60,7 @@ body {
       padding: 10px 20px;
       font-size: 16px;
       color: white;
-      background-color: #6663E9;
+      background-color: #000;
       border: none;
       border-radius: 4px;
       cursor: pointer;
@@ -68,7 +68,7 @@ body {
 }
 
 .get-in-touch button:hover {
-      background-color: #9896fa;
+      background-color: #3f3f3f;
 }
 
 /* Right Side: Contact Information */

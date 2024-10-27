@@ -7,7 +7,7 @@
       <title>Sell Laptop - Gadget Sell</title>
       <meta name="author" content="Vitthal-Korvan">
       <meta name="keywords" content="Vitthal-Korvan">
-      <link rel="icon" type="image/x-icon" href="./img/logo svg.png">
+      <link rel="icon" type="image/x-icon" href="./img/aa.jpg">
       <link rel="stylesheet" href="css/sell.css">
       <link rel="stylesheet" href="css/style.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -18,7 +18,7 @@
       <header>
             <nav>
                   <div class="logo">
-                        <a href="index.html"><img src="./img/logo2.png" alt="Logo"></a>
+                        <a href="index.html"><img src="./img/logo-white.png" alt="Logo"></a>
                   </div>
                   <ul class="nav-links desktop-nav">
                         <li><a href="index.html">Home</a></li>
@@ -65,79 +65,108 @@
                         <input type="hidden" name="from_name" value='SG - Laptop'>
                         <input type="hidden" name="subject" value="Sell Laptop Form">
                         <!-- User Information Fields -->
-            
-            
+
+
                         <!-- Gadget Information Fields -->
                         <h2>Laptop Information</h2>
                         <div class="form-group">
                               <label for="device-type">Select Brand*</label>
                               <select id="device-type" name="device-type" required>
-                                    <option value="tablet">Apple</option>
-                                    <option value="mobile">Sony</option>
-                                    <option value="laptop">LG</option>
+                                    <option value="apple">Apple</option>
+                                    <option value="Microsoft">Microsoft</option>
+                                    <option value="dell">Dell</option>
+                                    <option value="hp">HP</option>
+                                    <option value="lenovo">Lenovo</option>
+                                    <option value="Asus">Asus</option>
                                     <option value="other">Other </option>
                               </select>
                         </div>
-            
+
                         <div class="form-group">
                               <label for="brand">Model Name*</label>
-                              <input type="text" id="brand" name="brand" required>
+                              <input type="text" id="brand" name="brand"
+                                     required>
                         </div>
-            
                         <div class="form-group">
-                              <label>Condition*</label>
-                              <label><input type="radio" name="condition" value="excellent" required> Excellent: <span
-                                          style="font-weight: 400;">Device in Best Condition</span> </label>
-                              <label><input type="radio" name="condition" value="superb" required> Superb: <span
-                                          style="font-weight: 400;">1-2 Minor Issues</span> </label>
-                              <label><input type="radio" name="condition" value="very good" required> Very Good: <span
-                                          style="font-weight: 400;">Minimum Usage of Device</span> </label>
+                              <label for="storage">RAM &amp; Storage*</label>
+                              <input type="text" id="storage" name="storage"  required>
+                        </div>
+                        <div class="form-group">
+                              <label for="Size">Screen Size*</label>
+                              <input type="text" id="Size" name="Size" required>
+                        </div>
+                        <div class="form-group">
+                              <label for="Color"> Color*</label>
+                              <input type="text" id="Color" name="Color"  required>
+                        </div>
+
+                        <div class="form-group">
+                              <label>Device Condition*</label>
+                              <label><input type="radio" name="condition" value="like-new" required>  Excellent :<span
+                                          style="font-weight: 400;"> &nbsp;Like New Device</span> </label>
+
                               <label><input type="radio" name="condition" value="good" required> Good: <span
-                                          style="font-weight: 400;">Heavy Usage of Device</span> </label>
+                                          style="font-weight: 400;">
+                                          &nbsp;Light Usage of Device</span> </label>
+                              <label><input type="radio" name="condition" value="fair" required> Fair: <span
+                                          style="font-weight: 400;">
+                                          &nbsp;Heavy Usage of Device</span> </label>
                         </div>
-            
+                        
                         <div class="form-group">
-                              <label>Accessories Included</label>
-                              <label><input type="checkbox" name="charger"> Charger</label>
-                              <label><input type="checkbox" name="box"> Original Box</label>
-                              <label><input type="checkbox" name="earphones"> Earphones</label>
+                              <label>Accessories </label>
+                              <label><input type="checkbox" name="original-box"> Original Box </label>
+                              <label><input type="checkbox" name="bill"> Bill With GST </label>
+                              <label><input type="checkbox" name="Original Charger"> Original Charger</label>
+                              
+
                         </div>
+
+                        <div class="form-group">
+                              <label>Device Age*</label>
+                              <label><input type="radio" name="condition" value="Below 6 Months" required> Below 6
+                                    Months</label>
+                              <label><input type="radio" name="condition" value="7 Months - 12 Months" required> 7 Months -
+                                    12 Months
+                              </label>
+                              <label><input type="radio" name="condition" value="Above 12 Months" required> Above 12 Months </label>
+                        </div>
+                        <div class="form-group">
+                              <label for="expected-price"> Expected Price*</label>
+                              <input type="text" id="expected-price" name="expected-price" required>
+                        </div>
+
                         <h2>Personal Information</h2>
                         <div class="form-group">
                               <label for="name">Name*</label>
                               <input type="text" id="name" name="name" required>
                         </div>
-            
+
                         <div class="form-group">
                               <label for="mobile">Mobile*</label>
                               <input type="tel" id="mobile" name="mobile" required>
                         </div>
-            
+
                         <div class="form-group">
                               <label for="email">Email*</label>
                               <input type="email" id="email" name="email" required>
                         </div>
-            
+
                         <div class="form-group">
                               <label for="address">Address*</label>
                               <input type="text" id="address" name="address" required>
                         </div>
-            
+
                         <div class="form-group">
                               <label for="city">City*</label>
                               <input type="text" id="city" name="city" required>
                         </div>
-            
+
                         <div class="form-group">
                               <label for="pin">Pin Code*</label>
                               <input type="text" id="pin" name="pin" required>
                         </div>
-            
-                        <div class="form-group">
-                              <label for="pick-up-date">Pick-Up Date*</label>
-                              <input type="date" id="pick-up-date" name="pick-up-date" required>
-                        </div>
-            
+
                         <button type="submit" class="submit-btn">Submit</button>
                   </form>
             </section>

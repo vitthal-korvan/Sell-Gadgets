@@ -46,7 +46,7 @@ function showSlides(n) {
 }
 
 // Automatic Slideshow
-setInterval(() => plusSlides(1), 5000);
+setInterval(() => plusSlides(1), 4000);
 
 
 // --------------------- FAQ Toggle ---------------------

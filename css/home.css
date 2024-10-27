@@ -122,50 +122,35 @@ body {
       display: flex;
       justify-content: center;
       align-items: center;
-      padding: 4rem 2rem;
-      text-align: center;
+      /* padding: 4rem 2rem; */
+      text-align: justify;
       background: linear-gradient(to right, #000, #2a2a2b);
       /* gradient background */
       color: #fff;
-      height: 80vh;
+      height: 60vh;
       background-size: cover;
       background-position: center;
 }
 
 .intro-content {
-      max-width: 700px;
+      max-width: 750px;
 }
 
 .intro-section h1 {
       color: #fff;
-      font-size: 2.5rem;
+      font-size: 3rem;
       margin-bottom: 1rem;
       font-weight: 700;
 }
 
 .intro-section p {
-      font-size: 1.2rem;
+      font-size: 1.4rem;
       line-height: 1.5;
       margin-bottom: 2rem;
-      font-weight: 400;
+      font-weight: 300;
 }
 
-.intro-btn {
-      display: inline-block;
-      padding: 0.8rem 2rem;
-      background-color: #fff;
-      color: #000;
-      border-radius: 25px;
-      font-size: 1rem;
-      font-weight: 500;
-      transition: all 0.3s ease;
-      text-decoration: none;
-}
 
-.intro-btn:hover {
-      background-color: #ddd;
-      color: #4e4d4d;
-}
 
 /* Responsive Styling */
 @media (max-width: 1024px) {
@@ -192,10 +177,7 @@ body {
             font-size: 1.3rem;
       }
 
-      .intro-btn {
-            padding: 0.6rem 1.5rem;
-            font-size: 1.3rem;
-      }
+      
 }
 
 @media (max-width: 480px) {
@@ -212,10 +194,7 @@ body {
             font-size: 1rem;
       }
 
-      .intro-btn {
-            padding: 0.5rem 1rem;
-            font-size: 1rem;
-      }
+     
 }
 
 

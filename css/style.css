@@ -198,7 +198,8 @@ nav {
 
 /* Logo */
 .logo img {
-      max-width: 150px;
+      margin-top: 0.4rem;
+      max-width: 250px;
 }
 
 /* Desktop Navigation Links */
