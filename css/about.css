@@ -121,11 +121,11 @@ body {
       }
 
       .highlight-box h3 {
-            font-size: 18px;
+            font-size: 24px;
       }
 
       .highlight-box p {
-            font-size: 14px;
+            font-size: 18px;
       }
 }
 
@@ -135,7 +135,7 @@ body {
       }
 
       .assurance-responsibility h2 {
-            font-size: 24px;
+            font-size: 28px;
       }
 
       .assurance-responsibility p {
@@ -143,11 +143,11 @@ body {
       }
 
       .highlight-box h3 {
-            font-size: 16px;
+            font-size: 18px;
       }
 
       .highlight-box p {
-            font-size: 12px;
+            font-size: 14px;
       }
 }
 
@@ -231,19 +231,19 @@ body {
 
 @media (max-width: 768px) {
       .about-section h1 {
-            font-size: 30px;
+            font-size: 32px;
       }
 
       .why-choose-text h2 {
-            font-size: 24px;
+            font-size: 28px;
       }
 
       .why-choose-text p {
-            font-size: 16px;
+            font-size: 23px;
       }
 
       .why-choose-text ul li {
-            font-size: 14px;
+            font-size: 18px;
       }
 }
 
@@ -265,14 +265,14 @@ body {
       }
 
       .why-choose-text h2 {
-            font-size: 20px;
+            font-size: 24px;
       }
 
       .why-choose-text p {
-            font-size: 14px;
+            font-size: 15px;
       }
 
       .why-choose-text ul li {
-            font-size: 12px;
+            font-size: 15px;
       }
 }

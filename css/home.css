@@ -19,10 +19,11 @@ body {
 }
 
 @media (max-width: 768px) {
-      .slideshow-container{
+      .slideshow-container {
             display: none;
       }
-      .dots{
+
+      .dots {
             display: none;
       }
 }
@@ -184,16 +185,16 @@ body {
 
 @media (max-width: 768px) {
       .intro-section h1 {
-            font-size: 1.8rem;
+            font-size: 2rem;
       }
 
       .intro-section p {
-            font-size: 0.9rem;
+            font-size: 1.3rem;
       }
 
       .intro-btn {
             padding: 0.6rem 1.5rem;
-            font-size: 0.9rem;
+            font-size: 1.3rem;
       }
 }
 
@@ -204,16 +205,16 @@ body {
       }
 
       .intro-section h1 {
-            font-size: 1.5rem;
+            font-size: 1.7rem;
       }
 
       .intro-section p {
-            font-size: 0.8rem;
+            font-size: 1rem;
       }
 
       .intro-btn {
             padding: 0.5rem 1rem;
-            font-size: 0.8rem;
+            font-size: 1rem;
       }
 }
 
@@ -231,7 +232,7 @@ body {
 }
 
 @media (max-width: 768px) {
-      .scrolling-images{
+      .scrolling-images {
             display: none;
       }
 }
@@ -322,7 +323,7 @@ body {
       margin-bottom: 20px;
 }
 
-.device-item img:hover{
+.device-item img:hover {
       width: 350px;
 }
 
@@ -368,15 +369,16 @@ body {
 
 @media (max-width: 768px) {
       .device-item h3 {
-            font-size: 20px;
+            font-size: 1.6rem;
       }
 
       .device-item p {
-            font-size: 14px;
+            font-size: 1.4rem;
       }
 
       .btn {
             padding: 8px 16px;
+            font-size: 1.4rem;
       }
 }
 
@@ -386,16 +388,25 @@ body {
       }
 
       .device-item img {
-            width: 60px;
+            width: 160px;
       }
 
+      .device-item img:hover {
+            width: 200px;
+      }
+
+
       .device-item h3 {
-            font-size: 18px;
+            font-size: 20px;
       }
 
       .device-item p {
-            font-size: 13px;
+            font-size: 14px;
       }
+            .btn {
+                  padding: 8px 16px;
+                  font-size: 14px;
+            }
 }
 
 
@@ -457,16 +468,16 @@ body {
       }
 
       .icon-column img {
-            width: 80px;
-            height: 80px;
+            width: 120px;
+            height: 120px;
       }
 
       .icon-column h3 {
-            font-size: 16px;
+            font-size: 22px;
       }
 
       .icon-column p {
-            font-size: 12px;
+            font-size: 17px;
       }
 }
 
@@ -570,7 +581,7 @@ body {
 
       .faq-answer {
             padding: 15px;
-            font-size: 14px;
+            font-size: 18px;
       }
 
       /* Reduce size of the plus/minus toggle icon for mobile */
@@ -593,7 +604,7 @@ body {
       }
 
       .faq-answer {
-            font-size: 12px;
+            font-size: 15px;
             padding: 10px;
       }
 
