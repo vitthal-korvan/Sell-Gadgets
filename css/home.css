@@ -425,6 +425,7 @@ body {
 }
 
 .icon-column p {
+      text-align: justify;
       font-size: 16px;
       color: #666;
       margin: 0;
