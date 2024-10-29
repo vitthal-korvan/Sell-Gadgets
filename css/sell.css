@@ -186,7 +186,7 @@ h2 {
 @media (max-width: 768px) {
       .form-section {
             padding: 1rem;
-            width: 95%;
+            width: 100%;
       }
 
       .page-header {

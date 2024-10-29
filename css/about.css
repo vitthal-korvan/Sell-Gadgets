@@ -8,271 +8,141 @@ body {
       padding: 0;
       background-color: #f5f5f5;
       color: #333;
-} 
+}
 
 
-/* Container */
-.container {
+.about-section {
+      padding: 2rem;
       max-width: 1200px;
       margin: 0 auto;
-      padding: 20px;
 }
 
-/* About Section */
-.about-section {
-      padding: 50px 20px;
-      background-color: white;
-      text-align: center;
-}
-
-.about-section h1 {
-      font-size: 36px;
-      color: #000;
-}
-
-.about-section p {
-      font-size: 18px;
-      margin-top: 20px;
-      line-height: 1.6;
-      color: #666;
-}
-/* --------------  Our Assurance and Responsibility   ------------------------ */
-/* Our Assurance and Responsibility Section */
-.assurance-responsibility {
-      padding: 50px 20px;
-      background-color: #f9f9f9;
-      text-align: center;
-}
-
-.assurance-responsibility h2 {
-      font-size: 32px;
-      color: #000;
-      margin-bottom: 30px;
-}
-
-.assurance-responsibility p {
-      font-size: 18px;
-      color: #666;
-      margin-bottom: 40px;
-      line-height: 1.6;
-}
-
-.assurance-highlights {
+/* About Content */
+.about-content {
       display: flex;
-      justify-content: space-between;
-      gap: 20px;
-      flex-wrap: wrap;
-}
-
-/* Individual Highlight Box */
-.highlight-box {
-      background-color: white;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      flex: 1;
-      max-width: 30%;
-      transition: transform 0.3s;
-}
-
-.highlight-box > img{
-      width: 250px;
-      object-fit: cover;
-}
-
-
-.highlight-box:hover {
-      transform: translateY(-10px);
-}
-
-.highlight-icon {
-      width: 60px;
-      margin-bottom: 20px;
-}
-
-.highlight-box h3 {
-      font-size: 20px;
-      color: #333;
-      margin-bottom: 15px;
-}
-
-.highlight-box p {
-      font-size: 16px;
-      color: #666;
-      line-height: 1.4;
-}
-
-/* Responsive Design */
-@media (max-width: 992px) {
-      .assurance-highlights {
-            flex-direction: column;
-            gap: 30px;
-      }
-
-      .highlight-box {
-            max-width: 100%;
-            margin-bottom: 20px;
-      }
-}
-
-@media (max-width: 768px) {
-      .assurance-responsibility h2 {
-            font-size: 28px;
-      }
-
-      .highlight-box h3 {
-            font-size: 24px;
-      }
-
-      .highlight-box p {
-            font-size: 18px;
-      }
-}
-
-@media (max-width: 480px) {
-      .assurance-responsibility {
-            padding: 30px 10px;
-      }
-
-      .assurance-responsibility h2 {
-            font-size: 28px;
-      }
-
-      .assurance-responsibility p {
-            font-size: 16px;
-      }
-
-      .highlight-box h3 {
-            font-size: 18px;
-      }
-
-      .highlight-box p {
-            font-size: 14px;
-      }
-}
-
-/* -------------- Why Choose Us Section ---------------- */
-.why-choose-us {
-      display: flex;
-      justify-content: center;
       align-items: center;
-      padding: 50px 20px;
-      background-color: #f0f0f0;
+      gap: 2rem;
+      margin-bottom: 2rem;
 }
 
-.why-choose-content {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-}
-
-/* Image on the Left */
-.why-choose-image {
-      flex: 1;
-      max-width: 45%;
-}
-
-.why-choose-image img {
-      width: 100%;
+.about-image img {
+      max-width: 100%;
       border-radius: 10px;
 }
 
-/* Text on the Right */
-.why-choose-text {
+.about-text {
       flex: 1;
-      max-width: 45%;
-      margin-left: 30px;
 }
 
-.why-choose-text h2 {
-      font-size: 28px;
+.about-text h1 {
+      font-size: 2.2rem;
       color: #000;
-      margin-bottom: 20px;
+      margin-bottom: 1rem;
 }
 
-.why-choose-text p {
-      font-size: 18px;
+.about-text p {
+      font-size: 1rem;
       color: #666;
-      margin-bottom: 20px;
+      line-height: 1.5;
 }
 
-.why-choose-text ul {
+/* Mission and Values */
+.mission-values {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      margin-bottom: 2rem;
+}
+
+.mission,
+.values {
+      flex: 1;
+      background: #fff;
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.mission h2,
+.values h2 {
+      color: #000;
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+}
+
+.values ul {
       list-style: none;
       padding-left: 0;
 }
 
-.why-choose-text ul li {
-      font-size: 16px;
-      margin-bottom: 10px;
+.values li {
+      margin-bottom: 1rem;
+      line-height: 1.5;
 }
 
-.why-choose-text ul li strong {
+.values strong {
       color: #333;
 }
 
-/* Responsive Design */
-@media (max-width: 992px) {
-      .why-choose-content {
+/* What Sets Us Apart */
+.what-sets-us-apart {
+      background: #fff;
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.what-sets-us-apart h2 {
+      color: #000;
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+}
+
+.what-sets-us-apart ul {
+      list-style: none;
+      padding-left: 0;
+}
+
+.what-sets-us-apart li {
+      margin-bottom: 1rem;
+      line-height: 1.5;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+      .about-content {
+            flex-direction: column;
+            text-align: center;
+      }
+
+      .mission-values {
             flex-direction: column;
       }
 
-      .why-choose-image,
-      .why-choose-text {
-            max-width: 100%;
-            margin-left: 0;
+      .about-text h1 {
+            font-size: 1.8rem;
       }
 
-      .why-choose-text {
-            margin-top: 30px;
-            text-align: center;
-      }
-}
-
-@media (max-width: 768px) {
-      .about-section h1 {
-            font-size: 32px;
-      }
-
-      .why-choose-text h2 {
-            font-size: 28px;
-      }
-
-      .why-choose-text p {
-            font-size: 23px;
-      }
-
-      .why-choose-text ul li {
-            font-size: 18px;
+      .about-text p {
+            font-size: 0.95rem;
       }
 }
 
 @media (max-width: 480px) {
-      .about-section {
-            padding: 30px 10px;
+      .about-text h1 {
+            font-size: 1.6rem;
       }
 
-      .about-section h1 {
-            font-size: 26px;
+      .about-text p,
+      .mission h2,
+      .values h2,
+      .what-sets-us-apart h2 {
+            font-size: 0.9rem;
       }
 
-      .about-section p {
-            font-size: 16px;
-      }
-
-      .why-choose-us {
-            padding: 30px 10px;
-      }
-
-      .why-choose-text h2 {
-            font-size: 24px;
-      }
-
-      .why-choose-text p {
-            font-size: 15px;
-      }
-
-      .why-choose-text ul li {
-            font-size: 15px;
+      .mission,
+      .values,
+      .what-sets-us-apart {
+            padding: 1rem;
       }
 }
