@@ -106,11 +106,15 @@ body {
 
       .contact-info,
       .get-in-touch {
-            margin-left: 0;
             width: 100%;
             overflow-x: hidden;
       }
-      iframe{
+
+      .contact-info p {
+            font-size: 0.8rem;
+      }
+
+      iframe {
             margin-left: -1rem;
       }
 }
