@@ -17,46 +17,46 @@
 
 <body>
 
-      <header>
-            <nav>
-                  <div class="logo">
-                        <a href="https://sellgadgets.online/"><img src="./img/logo-white.png" alt="Logo"></a>
+<header>
+      <nav>
+            <div class="logo">
+                  <a href="/"><img src="./img/logo-white.png" alt="Logo"></a>
+            </div>
+            <ul class="nav-links desktop-nav">
+                  <li><a href="/">Home</a></li>
+                  <li><a href="sell-mobile">Sell Mobile</a></li>
+                  <li><a href="sell-laptop">Sell Laptop</a></li>
+                  <li><a href="sell-tablet">Sell Tablet</a></li>
+                  <li><a href="sell-other-devices">Sell Other Gadgets</a></li>
+                  <li><a href="about">About Us</a></li>
+                  <li><a href="contact">Contact Us</a></li>
+            </ul>
+
+            <!-- Hamburger icon for mobile -->
+            <div class="hamburger" onclick="toggleMenu()">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+            </div>
+
+            <!-- Mobile Menu Overlay -->
+            <div class="mobile-nav-overlay" id="mobileMenu">
+                  <div class="mobile-nav-header">
+                        <a href="/" class="logo"><img src="./img/logo-white.png" alt="Logo"></a>
+                        <span class="close-icon" onclick="toggleMenu()">&#10005;</span>
                   </div>
-                  <ul class="nav-links desktop-nav">
-                        <li><a href="https://sellgadgets.online/">Home</a></li>
-                        <li><a href="sell-mobile.html">Sell Mobile</a></li>
-                        <li><a href="sell-laptop.html">Sell Laptop</a></li>
-                        <li><a href="sell-tablet.html">Sell Tablet</a></li>
-                        <li><a href="sell-other-devices.html">Sell Other Gadgets</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="contact.html">Contact Us</a></li>
+                  <ul class="nav-links">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="sell-mobile">Sell Mobile</a></li>
+                        <li><a href="sell-laptop">Sell Laptop</a></li>
+                        <li><a href="sell-tablet">Sell Tablet</a></li>
+                        <li><a href="sell-other-devices">Sell Other Gadgets</a></li>
+                        <li><a href="about">About Us</a></li>
+                        <li><a href="contact">Contact Us</a></li>
                   </ul>
-
-                  <!-- Hamburger icon for mobile -->
-                  <div class="hamburger" onclick="toggleMenu()">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                  </div>
-
-                  <!-- Mobile Menu Overlay -->
-                  <div class="mobile-nav-overlay" id="mobileMenu">
-                        <div class="mobile-nav-header">
-                              <a href="https://sellgadgets.online/" class="logo"><img src="./img/logo-white.png" alt="Logo"></a>
-                              <span class="close-icon" onclick="toggleMenu()">&#10005;</span>
-                        </div>
-                        <ul class="nav-links">
-                              <li><a href="https://sellgadgets.online/">Home</a></li>
-                              <li><a href="sell-mobile.html">Sell Mobile</a></li>
-                              <li><a href="sell-laptop.html">Sell Laptop</a></li>
-                              <li><a href="sell-tablet.html">Sell Tablet</a></li>
-                              <li><a href="sell-other-devices.html">Sell Other Gadgets</a></li>
-                              <li><a href="about.html">About Us</a></li>
-                              <li><a href="contact.html">Contact Us</a></li>
-                        </ul>
-                  </div>
-            </nav>
-      </header>
+            </div>
+      </nav>
+</header>
 
       <section class="contact-us">
             <div class="container">
@@ -124,7 +124,7 @@
                               <i class="fas fa-envelope"></i>
                         </a>
                         
-                        <h4 style="padding-top: 9px;">Created By "One Code" - </h4> <a
+                        <h4 style="padding-top: 9px;">One Code - </h4> <a
                               href="https://www.linkedin.com/company/one-code-community" target="_blank"
                               class="icon-link">
                               <i class="fab fa-linkedin"></i>

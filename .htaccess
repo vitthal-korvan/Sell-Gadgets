@@ -1,0 +1,10 @@
+# Enable URL rewriting
+RewriteEngine On
+
+# Redirect any requests for *.html to the version without the extension
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^([^/]+)$ $1.html [L]
+
+# Redirect any .html file access to the non-extension URL
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /([^.]+)\.html\ HTTP/
+RewriteRule ^([^.]+)\.html$ /$1 [R=301,L]

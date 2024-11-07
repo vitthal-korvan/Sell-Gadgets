@@ -99,6 +99,10 @@ body {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+      .contact-us {
+            height: fit-content;
+      }
+
       .container {
             flex-direction: column;
             align-items: center;
@@ -110,11 +114,26 @@ body {
             overflow-x: hidden;
       }
 
+      .contact-info {
+            margin-left: 1rem;
+            margin-top: 1rem;
+      }
+
       .contact-info p {
             font-size: 0.8rem;
       }
 
+      .social-icons h4 {
+            font-size: 0.7rem;
+      }
+
       iframe {
             margin-left: -1rem;
+      }
+}
+
+@media (max-width:370px) {
+      .contact-info h2 {
+            text-align: left;
       }
 }

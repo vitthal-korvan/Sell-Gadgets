@@ -9,7 +9,7 @@ body {
       color: #333;
 }
 
-header {
+/* header {
       background-color: red;
       padding: 10px;
       color: white;
@@ -33,7 +33,7 @@ nav {
 .nav-links a {
       color: white;
       text-decoration: none;
-}
+} */
 
 main {
       padding: 20px;
