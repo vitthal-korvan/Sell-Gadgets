@@ -70,7 +70,14 @@ body {
       margin-bottom: 0.5rem;
 }
 
+.mission p{
+      text-align: justify;
+}
+
+
+
 .values ul {
+      text-align: justify;
       list-style: none;
       padding-left: 0;
 }
