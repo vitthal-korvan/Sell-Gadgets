@@ -28,14 +28,14 @@
                         <li><a href="about">ABOUT US</a></li>
                         <li><a href="contact">CONTACT US</a></li>
                   </ul>
-      
+
                   <!-- Hamburger icon for mobile -->
                   <div class="hamburger" onclick="toggleMenu()">
                         <span></span>
                         <span></span>
                         <span></span>
                   </div>
-      
+
                   <!-- Mobile Menu Overlay -->
                   <div class="mobile-nav-overlay" id="mobileMenu">
                         <div class="mobile-nav-header">
@@ -69,11 +69,23 @@
                         <!-- Gadget Information Fields -->
                         <h2>Device Information</h2>
                         <div class="form-group">
-                              <label for="device-type">Select Brand*</label>
-                              <select id="device-type" name="device-type" required>
+                              <label for="brand">Select Brand*</label>
+                              <select id="brand" name="brand" required>
                                     <option value="apple">Apple</option>
                                     <option value="Samsung">Samsung</option>
+                                    <option value="OnePlus">One Plus</option>
                                     <option value="other">Other </option>
+                              </select>
+                        </div>
+                        <div class="form-group">
+                              <label for="device-type">Select Device*</label>
+                              <select id="device-type" name="device-type" required>
+
+                                    <option value="watch">Watch</option>
+                                    <option value="airpod">Airpod</option>
+                                    <option value="speaker">Speaker </option>
+                                    <option value="other">Other Device </option>
+
                               </select>
                         </div>
 
@@ -81,8 +93,8 @@
                               <label for="brand">Model Name*</label>
                               <input type="text" id="brand" name="brand" required>
                         </div>
-                        
-                        
+
+
 
                         <div class="form-group">
                               <label>Device Condition*</label>

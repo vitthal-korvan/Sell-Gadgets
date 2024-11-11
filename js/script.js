@@ -1,15 +1,7 @@
 // ---------------- Hamburger Menu --------------
-// function toggleMenu() {
-//   const mobileNav = document.getElementById("mobile-nav");
-//   mobileNav.classList.toggle("show");
-// }
-
-
  function toggleMenu() {
    document.getElementById("mobileMenu").classList.toggle("open");
  }
-
-
 
 //----------------- Slideshow -------------------
 let slideIndex = 1;
@@ -72,53 +64,3 @@ document.querySelectorAll(".faq-item").forEach((item) => {
   });
 });
 
-// -------------- Initialize EmailJS ---------------------
-(function () {
-  emailjs.init("YOUR_EMAILJS_USER_ID");
-})();
-
-// Handle Sell Gadget Forms submission
-document
-  .getElementById("sellLaptopForm")
-  ?.addEventListener("submit", function (event) {
-    event.preventDefault();
-    sendForm(this);
-  });
-
-document
-  .getElementById("sellTabletForm")
-  ?.addEventListener("submit", function (event) {
-    event.preventDefault();
-    sendForm(this);
-  });
-
-document
-  .getElementById("sellOtherDevicesForm")
-  ?.addEventListener("submit", function (event) {
-    event.preventDefault();
-    sendForm(this);
-  });
-
-// Handle Contact Us form submission
-// Initialize EmailJS
-(function() {
-    emailjs.init("pTDs-lKL96Apcs-So"); // Replace with your EmailJS user ID
-})();
-
-document.getElementById("contact-form").addEventListener("submit", function(event) {
-    event.preventDefault();
-
-    emailjs
-      .sendForm("service_htxxlys", "template_cazaa87", this) // Replace with your EmailJS service ID and template ID
-      .then(
-        function () {
-          alert(
-            "Thanks for reaching out! Your message has been sent successfully."
-          );
-        },
-        function (error) {
-          alert("Oops! Something went wrong, please try again.");
-          console.log("Failed to send email:", error);
-        }
-      );
-});

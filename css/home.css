@@ -20,9 +20,15 @@ body {
 
 @media (max-width: 768px) {
       .slideshow-container {
-            display: none;
+            height: 20vh;
+      }
+      .mySlides a img{
+            height: 18vh;
       }
 
+      .numbertext{
+            font-size: 0.6rem;
+      }
       .dots {
             display: none;
       }

@@ -90,6 +90,7 @@ nav {
       align-items: center;
       transform: translateX(-100%);
       transition: transform 0.3s ease;
+      z-index: 999;
 }
 
 .mobile-nav-overlay.open {
