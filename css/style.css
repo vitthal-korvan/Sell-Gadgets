@@ -235,19 +235,26 @@ form button:hover {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      max-width: 1200px;
+      max-width: 1080px;
       width: 100%;
       padding: 10px 20px;
 }
 
 .footer-text {
       color: #fff;
-      font-size: 18px;
+      font-size: 1.1rem;
+      /* font-weight: 700; */
 }
 
 .social-icons {
       display: flex;
       gap: 15px;
+}
+.social-icons .privacy{
+      text-decoration: none;
+      margin-top: 0.3rem;
+      font-weight: 500;
+      font-size: 1.1rem;
 }
 
 .social-icons a {

@@ -134,9 +134,10 @@ input[type="radio"] {
 }
 
 .submit-btn {
-      background-color: #6663E9;
+      background-color: #000;
       color: #fff;
       padding: 0.8rem 1.5rem;
+      font-size: 1.3rem;
       border: none;
       border-radius: 5px;
       cursor: pointer;
