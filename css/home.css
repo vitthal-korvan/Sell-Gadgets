@@ -283,6 +283,13 @@ body {
       text-align: center;
 }
 
+.sell-devices .our-services{
+      font-size: 2em;
+      margin-top: 1rem;
+      padding-bottom: 3rem;
+
+}
+
 .sell-devices .container {
       display: flex;
       justify-content: space-between;
@@ -325,7 +332,7 @@ body {
 
 .device-item p {
       font-size: 16px;
-      color: #666;
+      color: #000;
       text-align: justify;
       margin-bottom: 20px;
       line-height: 1.4;
@@ -443,7 +450,7 @@ body {
 .icon-column p {
       text-align: justify;
       font-size: 16px;
-      color: #666;
+      color: #000;
       margin: 0;
 }
 
@@ -525,7 +532,7 @@ body {
 
 .faq-question h3 {
       margin: 0;
-      color: #333;
+      color: #000;
 }
 
 .faq-question:hover {
@@ -543,7 +550,7 @@ body {
       display: none;
       background-color: #fafafa;
       font-size: 16px;
-      color: #666;
+      color: #000;
       line-height: 1.5;
 }
 
