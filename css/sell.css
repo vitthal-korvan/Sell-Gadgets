@@ -10,9 +10,10 @@ body {
 }
 
 main {
+      
       padding: 20px;
       margin: 20px auto;
-      width: 80%;
+      max-width: 1400px;
       background-color: white;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }

@@ -19,8 +19,10 @@ body {
 .container {
       display: flex;
       gap: 40px;
-      max-width: 1200px;
+      max-width: 1400px;
+      background-color: #ededed;
       width: 100%;
+      padding: 1.5rem;
 }
 
 /* Left Side: Get in Touch Form */
@@ -96,6 +98,11 @@ body {
       margin-right: 20px;
       font-size: 18px;
       color: #333;
+}
+
+.mandatory{
+      margin-left: 1.2rem;
+      margin-bottom: 1rem;
 }
 
 /* Responsive Design */
