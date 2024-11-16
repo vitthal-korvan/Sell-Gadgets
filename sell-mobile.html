@@ -15,46 +15,46 @@
 
 <body>
 
-<header>
-      <nav>
-            <div class="logo">
-                  <a href="/"><img src="./img/logo-white.png" alt="Logo"></a>
-            </div>
-            <ul class="nav-links desktop-nav">
-                  <li><a href="/">HOME</a></li>
-                  <li><a href="sell-mobile">SELL MOBILE</a></li>
-                  <li><a href="sell-laptop">SELL LAPTOP</a></li>
-                  <li><a href="sell-tablet">SELL TABLET</a></li>
-                  <li><a href="sell-other-devices">SELL OTHER GADGETS</a></li>
-                  <li><a href="about">ABOUT US</a></li>
-                  <li><a href="contact">CONTACT US</a></li>
-            </ul>
-
-            <!-- Hamburger icon for mobile -->
-            <div class="hamburger" onclick="toggleMenu()">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-            </div>
-
-            <!-- Mobile Menu Overlay -->
-            <div class="mobile-nav-overlay" id="mobileMenu">
-                  <div class="mobile-nav-header">
-                        <a href="/" class="logo"><img src="./img/logo-white.png" alt="Logo"></a>
-                        <span class="close-icon" onclick="toggleMenu()">&#10005;</span>
+      <header>
+            <nav>
+                  <div class="logo">
+                        <a href="/"><img src="./img/logo-white.png" alt="Logo"></a>
                   </div>
-                  <ul class="nav-links">
+                  <ul class="nav-links desktop-nav">
                         <li><a href="/">HOME</a></li>
                         <li><a href="sell-mobile">SELL MOBILE</a></li>
                         <li><a href="sell-laptop">SELL LAPTOP</a></li>
                         <li><a href="sell-tablet">SELL TABLET</a></li>
-                        <li><a href="sell-other-devices">SELL OTHER GADGETS</a></li>
+                        <li><a href="sell-other-devices">SELL OTHER DEVICES</a></li>
                         <li><a href="about">ABOUT US</a></li>
                         <li><a href="contact">CONTACT US</a></li>
                   </ul>
-            </div>
-      </nav>
-</header>
+      
+                  <!-- Hamburger icon for mobile -->
+                  <div class="hamburger" onclick="toggleMenu()">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                  </div>
+      
+                  <!-- Mobile Menu Overlay -->
+                  <div class="mobile-nav-overlay" id="mobileMenu">
+                        <div class="mobile-nav-header">
+                              <a href="/" class="logo"><img src="./img/logo-white.png" alt="Logo"></a>
+                              <span class="close-icon" onclick="toggleMenu()">&#10005;</span>
+                        </div>
+                        <ul class="nav-links">
+                              <li><a href="/">HOME</a></li>
+                              <li><a href="sell-mobile">SELL MOBILE</a></li>
+                              <li><a href="sell-laptop">SELL LAPTOP</a></li>
+                              <li><a href="sell-tablet">SELL TABLET</a></li>
+                              <li><a href="sell-other-devices">SELL OTHER DEVICES</a></li>
+                              <li><a href="about">ABOUT US</a></li>
+                              <li><a href="contact">CONTACT US</a></li>
+                        </ul>
+                  </div>
+            </nav>
+      </header>
 
       <main>
             <h1>Sell Mobile</h1>
@@ -68,7 +68,10 @@
 
 
                         <!-- Gadget Information Fields -->
+                       
+                        <h2>Ready to sell your used mobile? Get your instant quote now and see how easy it is to get cash for your mobile today!</h2>
                         <h2>Mobile Information</h2>
+                        <p class="mandatory">Fields marked with an * are mandatory</p>
                         <div class="form-group">
                               <label for="brand">Select Brand*</label>
                               <select id="brand" name="brand" required>
@@ -121,10 +124,10 @@
 
                         <div class="form-group">
                               <label>Accessories*</label>
-                              <label><input type="checkbox" name="charger" required> Box With Same IMEI</label>
-                              <label><input type="checkbox" name="bill" required> Bill With GST &amp; Same IMEI</label>
-                              <label><input type="checkbox" name="Original Charger" required> Original Charger</label>
-                              <label><input type="checkbox" name="Original Data Cable" required> Original Data Cable</label>
+                              <label><input type="checkbox" name="charger" > Box With Same IMEI</label>
+                              <label><input type="checkbox" name="bill" > Bill With GST &amp; Same IMEI</label>
+                              <label><input type="checkbox" name="Original Charger" > Original Charger</label>
+                              <label><input type="checkbox" name="Original Data Cable" > Original Data Cable</label>
 
                         </div>
 

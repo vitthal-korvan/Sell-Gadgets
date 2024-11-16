@@ -84,6 +84,10 @@ form button {
       margin-bottom: 1.5rem;
 }
 
+.mandatory{
+      color: #000;
+}
+
 label {
       font-size: 1rem;
       display: block;
@@ -220,7 +224,7 @@ h2 {
 .back-link {
       display: inline-block;
       text-decoration: none;
-      background-color: #6663E9;
+      background-color: #000;
       color: #fff;
       padding: 0.8rem 1.5rem;
       border-radius: 5px;
@@ -229,7 +233,7 @@ h2 {
 }
 
 .back-link:hover {
-      background-color: #4e4dc0;
+      background-color: #000;
 }
 
 /* Animations */

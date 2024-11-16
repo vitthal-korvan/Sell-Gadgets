@@ -41,6 +41,7 @@ body {
 }
 
 .about-text p {
+      text-align: justify;
       font-size: 1rem;
       color: #000;
       line-height: 1.5;
@@ -70,7 +71,8 @@ body {
       margin-bottom: 0.5rem;
 }
 
-.mission p{
+.mission p {
+      color: #000;
       text-align: justify;
 }
 
@@ -85,6 +87,7 @@ body {
 .values li {
       margin-bottom: 1rem;
       line-height: 1.5;
+      color: #000;
 }
 
 .values strong {
@@ -111,6 +114,8 @@ body {
 }
 
 .what-sets-us-apart li {
+      color: #000;
+      text-align: justify;
       margin-bottom: 1rem;
       line-height: 1.5;
 }
