@@ -22,13 +22,15 @@ body {
       .slideshow-container {
             height: 20vh;
       }
-      .mySlides a img{
+
+      .mySlides a img {
             height: 18vh;
       }
 
-      .numbertext{
+      .numbertext {
             font-size: 0.6rem;
       }
+
       .dots {
             display: none;
       }
@@ -283,7 +285,7 @@ body {
       text-align: center;
 }
 
-.sell-devices .our-services{
+.sell-devices .our-services {
       font-size: 2em;
       margin-top: 1rem;
       padding-bottom: 3rem;
@@ -410,7 +412,7 @@ body {
 
 
 /* -------- 4 Column Layout ----------- */
-.works{
+.works {
       margin-top: 4rem;
       margin-bottom: -1rem;
 }
@@ -581,6 +583,11 @@ body {
       .faq-question {
             padding: 10px 15px;
             font-size: 16px;
+            text-align: justify;
+      }
+
+      .faq-question h3 {
+            text-align: left;
       }
 
       .faq-answer {
