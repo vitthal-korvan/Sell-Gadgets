@@ -13,13 +13,14 @@ body {
       padding: 40px;
       display: flex;
       justify-content: center;
-      height: 100vh;
+      max-height: 100vh;
 }
 
 .container {
       display: flex;
       gap: 40px;
-      max-width: 1400px;
+      /* max-width: 1400px; */
+      min-height: 620px;
       background-color: #ededed;
       width: 100%;
       padding: 1.5rem;
@@ -119,7 +120,6 @@ body {
       .contact-info,
       .get-in-touch {
             width: 100%;
-            overflow-x: hidden;
       }
 
       .contact-info {
@@ -137,6 +137,7 @@ body {
 
       iframe {
             margin-left: -1rem;
+            width: -webkit-fill-available;
       }
 }
 
