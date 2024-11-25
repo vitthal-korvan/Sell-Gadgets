@@ -130,6 +130,10 @@ nav {
 
 /* Responsive Styles */
 @media (max-width:1350px) {
+      nav {
+            padding: 0 40px;
+      }
+
       .logo img {
             margin-top: 0.2rem;
             width: 200px;
@@ -142,7 +146,24 @@ nav {
 
 }
 
-@media (max-width:1050px) {
+@media (max-width:1150px) {
+      nav {
+            padding: 0 30px;
+      }
+
+      .logo img {
+            margin-top: 0.2rem;
+            width: 200px;
+      }
+
+      .nav-links a {
+            font-size: 1.1vw;
+            padding: 0px 9px;
+      }
+
+}
+
+@media (max-width:1090px) {
       .logo img {
             margin-top: 0.2rem;
             width: 180px;
@@ -150,15 +171,15 @@ nav {
 
       .nav-links a {
             font-size: 1vw;
-            padding: 5px 8px;
+            padding: 0px 8px;
       }
 
 }
 
-@media (max-width: 820px) {
+@media (max-width: 900px) {
       .logo img {
-           padding-left: 1.5rem;
-           width: 200px;
+            padding-left: 1.5rem;
+            width: 200px;
       }
 
       .desktop-nav {
@@ -170,6 +191,23 @@ nav {
       }
 }
 
+@media (max-width: 400px) {
+      nav {
+            padding: 0rem !important;
+      }
+}
+
+@media (max-width: 300px) {
+      nav {
+            padding: 0rem !important;
+      }
+
+      .logo img {
+            padding-left: 1.5rem;
+            width: 150px;
+      }
+
+}
 
 /* ---------------- Main Content -------------------*/
 main {

@@ -13,7 +13,7 @@ body {
       padding: 40px;
       display: flex;
       justify-content: center;
-      max-height: 100vh;
+      min-height: 100vh;
 }
 
 .container {
@@ -101,20 +101,24 @@ body {
       color: #333;
 }
 
-.mandatory{
+.mandatory {
       margin-left: 1.2rem;
       margin-bottom: 1rem;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
+
       .contact-us {
+            padding: 20px;
             height: fit-content;
+            overflow-x: hidden;
       }
 
       .container {
             flex-direction: column;
             align-items: center;
+            overflow-x: hidden;
       }
 
       .contact-info,
@@ -128,7 +132,7 @@ body {
       }
 
       .contact-info p {
-            font-size: 0.8rem;
+            font-size: 0.7rem;
       }
 
       .social-icons h4 {

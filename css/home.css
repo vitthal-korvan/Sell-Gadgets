@@ -124,6 +124,76 @@ body {
 }
 
 
+
+
+/* ----------- Infinite Scrolling ----------- */
+
+/* Horizontal scrolling images container */
+.scrolling-images {
+      width: 100%;
+      height: 20vh;
+      overflow: hidden;
+      position: relative;
+      background-color: white;
+      margin-top: 3rem;
+}
+
+/* @media (max-width: 768px) {
+      .scrolling-images {
+            display: none;
+      }
+} */
+
+/* Track to hold images */
+.scrolling-track {
+      display: flex;
+      width: calc(250px * 15);
+      /* Adjust this based on the number of images */
+      animation: scroll 30s linear infinite;
+}
+
+/* Each image in the scrolling section */
+.scrolling-track img {
+      max-width: 150px;
+      width: 100px;
+      height: 100px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+      object-fit: cover;
+      object-fit: cover;
+      margin-right: 2rem;
+      border-radius: 10px;
+}
+
+/* Keyframes for continuous scrolling animation */
+@keyframes scroll {
+      0% {
+            transform: translateX(0);
+      }
+
+      100% {
+            transform: translateX(-100%);
+      }
+}
+
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+      .scrolling-track img {
+            width: 200px;
+      }
+}
+
+@media (max-width: 480px) {
+      .scrolling-track img {
+            width: 150px;
+      }
+}
+
+
+
 /* ----------- Intro ------------- */
 /* Intro Section Styling */
 .intro-section {
@@ -183,11 +253,28 @@ body {
       }
 
       .intro-section h1 {
-            font-size: 2rem;
+            font-size: 1.9rem;
       }
 
       .intro-section p {
-            font-size: 1.3rem;
+            font-size: 1.1rem;
+      }
+
+
+}
+
+@media (max-width: 580px) {
+      .intro-section {
+            height: 60vh;
+            padding: 3rem 1.5rem;
+      }
+
+      .intro-section h1 {
+            font-size: 1.6rem;
+      }
+
+      .intro-section p {
+            font-size: 1rem;
       }
 
 
@@ -196,7 +283,7 @@ body {
 @media (max-width: 480px) {
       .intro-section {
             padding: 2rem 1rem;
-            max-height: 80vh;
+            height: 80vh;
       }
 
       .intro-section h1 {
@@ -204,75 +291,26 @@ body {
       }
 
       .intro-section p {
-            font-size: 1rem;
+            font-size: 0.85rem;
+      }
+}
+
+@media (max-width: 315px) {
+      .intro-section {
+            padding: 1rem 1rem;
+            max-height: 80vh;
+      }
+
+      .intro-section h1 {
+            font-size: 1.2rem;
+      }
+
+      .intro-section p {
+            font-size: 0.7rem;
       }
 }
 
 
-/* ----------- Infinite Scrolling ----------- */
-
-/* Horizontal scrolling images container */
-.scrolling-images {
-      width: 100%;
-      height: 20vh;
-      overflow: hidden;
-      position: relative;
-      background-color: white;
-      margin-top: 3rem;
-}
-
-/* @media (max-width: 768px) {
-      .scrolling-images {
-            display: none;
-      }
-} */
-
-/* Track to hold images */
-.scrolling-track {
-      display: flex;
-      width: calc(250px * 15);
-      /* Adjust this based on the number of images */
-      animation: scroll 30s linear infinite;
-}
-
-/* Each image in the scrolling section */
-.scrolling-track img {
-      max-width: 150px;
-      width: 100px;
-      height: 100px;
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      width: 50%;
-      object-fit: cover;
-      object-fit: cover;
-      margin-right: 2rem;
-      border-radius: 10px;
-}
-
-/* Keyframes for continuous scrolling animation */
-@keyframes scroll {
-      0% {
-            transform: translateX(0);
-      }
-
-      100% {
-            transform: translateX(-100%);
-      }
-}
-
-/* Media queries for responsiveness */
-@media (max-width: 768px) {
-      .scrolling-track img {
-            width: 200px;
-      }
-}
-
-@media (max-width: 480px) {
-      .scrolling-track img {
-            width: 150px;
-      }
-}
 
 /* ---------- 3 Column Layout ------------- */
 

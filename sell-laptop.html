@@ -29,14 +29,14 @@
                         <li><a href="about">ABOUT US</a></li>
                         <li><a href="contact">CONTACT US</a></li>
                   </ul>
-      
+
                   <!-- Hamburger icon for mobile -->
                   <div class="hamburger" onclick="toggleMenu()">
                         <span></span>
                         <span></span>
                         <span></span>
                   </div>
-      
+
                   <!-- Mobile Menu Overlay -->
                   <div class="mobile-nav-overlay" id="mobileMenu">
                         <div class="mobile-nav-header">
@@ -58,15 +58,17 @@
 
       <main>
             <h1>Sell Laptop</h1>
-            <form id="gadgetForm" action="https://api.web3forms.com/submit" method="POST">
-                  <input type="hidden" name="access_key" value="7fa8edb0-903d-4b5a-84e9-f64c832cac90">
-                  <input type="hidden" name="redirect" value="https://sellgadgets.online/success.html">
-                  <input type="hidden" name="from_name" value='SG - Laptop'>
-                  <input type="hidden" name="subject" value="Sell Laptop Form">
+            <section class="form-section">
+                  <form id="gadgetForm" action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key" value="7fa8edb0-903d-4b5a-84e9-f64c832cac90">
+                        <input type="hidden" name="redirect" value="https://sellgadgets.online/success.html">
+                        <input type="hidden" name="from_name" value='SG - Laptop'>
+                        <input type="hidden" name="subject" value="Sell Laptop Form">
 
 
                         <!-- Gadget Information Fields -->
-                        <h2 >Ready to sell your used laptop? Get your instant quote now and see how easy it is to get cash for your laptop today!
+                        <h2>Ready to sell your used laptop? Get your instant quote now and see how easy it is to get
+                              cash for your laptop today!
                         </h2>
                         <h2>Laptop Information</h2>
                         <p class="mandatory">Fields marked with an * are mandatory</p>
@@ -85,12 +87,11 @@
 
                         <div class="form-group">
                               <label for="model-name">Model Name*</label>
-                              <input type="text" id="model-name" name="model-name"
-                                     required>
+                              <input type="text" id="model-name" name="model-name" required>
                         </div>
                         <div class="form-group">
                               <label for="storage">RAM &amp; Storage*</label>
-                              <input type="text" id="storage" name="storage"  required>
+                              <input type="text" id="storage" name="storage" required>
                         </div>
                         <div class="form-group">
                               <label for="screen-size">Screen Size*</label>
@@ -98,12 +99,12 @@
                         </div>
                         <div class="form-group">
                               <label for="Color"> Color*</label>
-                              <input type="text" id="Color" name="Color"  required>
+                              <input type="text" id="Color" name="Color" required>
                         </div>
 
                         <div class="form-group">
                               <label>Device Condition*</label>
-                              <label><input type="radio" name="condition" value="like-new" required>  Excellent :<span
+                              <label><input type="radio" name="condition" value="like-new" required> Excellent :<span
                                           style="font-weight: 400;"> &nbsp;Like New Device</span> </label>
 
                               <label><input type="radio" name="condition" value="good" required> Good: <span
@@ -113,13 +114,13 @@
                                           style="font-weight: 400;">
                                           &nbsp;Heavy Usage of Device</span> </label>
                         </div>
-                        
+
                         <div class="form-group">
                               <label>Accessories </label>
                               <label><input type="checkbox" name="original-box"> Original Box </label>
                               <label><input type="checkbox" name="bill"> Bill With GST </label>
                               <label><input type="checkbox" name="Original Charger"> Original Charger</label>
-                              
+
 
                         </div>
 
@@ -127,10 +128,12 @@
                               <label>Device Age*</label>
                               <label><input type="radio" name="condition" value="Below 6 Months" required> Below 6
                                     Months</label>
-                              <label><input type="radio" name="condition" value="7 Months - 12 Months" required> 7 Months -
+                              <label><input type="radio" name="condition" value="7 Months - 12 Months" required> 7
+                                    Months -
                                     12 Months
                               </label>
-                              <label><input type="radio" name="condition" value="Above 12 Months" required> Above 12 Months </label>
+                              <label><input type="radio" name="condition" value="Above 12 Months" required> Above 12
+                                    Months </label>
                         </div>
                         <div class="form-group">
                               <label for="expected-price"> Expected Price*</label>
