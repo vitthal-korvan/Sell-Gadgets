@@ -7,13 +7,16 @@
 
 body {
       font-family: "Poppins";
+      display: flex;
+      flex-direction: column;
 }
 
 .contact-us {
       padding: 40px;
       display: flex;
       justify-content: center;
-      min-height: 100vh;
+      align-items: center;
+      min-height: 90vh;
 }
 
 .container {
@@ -132,7 +135,7 @@ body {
       }
 
       .contact-info p {
-            font-size: 0.7rem;
+            font-size: 1rem;
       }
 
       .social-icons h4 {
@@ -148,5 +151,16 @@ body {
 @media (max-width:370px) {
       .contact-info h2 {
             text-align: left;
+      }
+
+      .contact-info p {
+            font-size: 0.8rem;
+      }
+}
+
+@media (max-width:300px) {
+
+      .contact-info p {
+            font-size: 0.6rem;
       }
 }
