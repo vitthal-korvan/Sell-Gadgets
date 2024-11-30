@@ -200,10 +200,9 @@ body {
       display: flex;
       justify-content: center;
       align-items: center;
-      /* padding: 4rem 2rem; */
+      position: relative;
       text-align: justify;
       background: linear-gradient(to right, #000, #2a2a2b);
-      /* gradient background */
       color: #fff;
       height: 60vh;
       background-size: cover;
@@ -211,7 +210,9 @@ body {
 }
 
 .intro-content {
-      max-width: 750px;
+      position: absolute;
+      height: fit-content;
+      max-width: 80%;
 }
 
 .intro-section h1 {
@@ -259,8 +260,6 @@ body {
       .intro-section p {
             font-size: 1.1rem;
       }
-
-
 }
 
 @media (max-width: 580px) {
@@ -282,8 +281,8 @@ body {
 
 @media (max-width: 480px) {
       .intro-section {
-            padding: 2rem 1rem;
-            height: 80vh;
+            padding: 0rem 1rem;
+            height: 65vh;
       }
 
       .intro-section h1 {
@@ -297,8 +296,8 @@ body {
 
 @media (max-width: 315px) {
       .intro-section {
-            padding: 1rem 1rem;
-            max-height: 80vh;
+            padding: 0rem 1rem;
+            max-height: 60vh;
       }
 
       .intro-section h1 {
